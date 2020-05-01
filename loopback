@@ -1,0 +1,4 @@
+#!/bin/bash
+for i in {101..120}; do
+echo 172.17.$i.1
+done

@@ -1,0 +1,4 @@
+#!/bin/bash
+for i in {101..299}; do
+ls -asl /home/siduser$i/.ssh/
+done

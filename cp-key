@@ -1,0 +1,8 @@
+#!/bin/bash
+for i in {101..299}; do
+mkdir /home/siduser$i/.ssh
+chown siduser$i:siduser$i /home/siduser$i/.ssh
+cp key.pem /home/siduser$i/.ssh/network-key.pem
+chown siduser$i:siduser$i /home/siduser$i/.ssh/network-key.pem
+chmod 600 /home/siduser$i/.ssh/network-key.pem
+done
